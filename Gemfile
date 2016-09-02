@@ -14,8 +14,18 @@ gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
+gem 'simple_form', '~> 3.2', '>= 3.2.1'
+
+gem 'bootstrap-sass-extras', '~> 0.0.2'
+
+gem 'devise', '~> 4.2'
+
+# gem 'devise', '~> 3.5', '>= 3.5.6'
+
 # bootstrap-sass 3.3.6
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
+
+gem 'font-awesome-sass', '~> 4.6', '>= 4.6.2'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -47,4 +57,10 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
+
+group :production do
+  gem 'rails_12factor', '~> 0.0.3'
+  gem 'pg', '~> 0.18.4'
+end
+
 
